@@ -12,7 +12,7 @@
 * ATM: This class should contain the main logic like entering the pin, selecting the transaction, deposit, withdraw, balance display, the error message displayed, exit message displayed, etc.
 * User: A user must have an account and a card 
 * Account: An account has a balance that should be updated when a transaction occurs 
-* Card: A card should get authenticated based on PIN entered 3. Sample input and outputs:
+* Card: A card should get authenticated based on PIN entered
 
 ## 3. Note:
 * You must use object-oriented principles, accept and provide values only through the CLI.
