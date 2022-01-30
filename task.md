@@ -1,39 +1,28 @@
-# OOP 101
+Recruitment Task 1: Design ATM interface
 
-### Aim
-Apply the _basics_ of object-oriented programming in python to a simple task. By the end of this task you would have gained hands-on experience to all of the basic OOP that you have learnt or will learn while doing this task.
+—----------------------------------------------------------------------------------
+1. Description:
+* Users should be able to insert cards and perform transactions. 
+* Users should be authenticated based on the entered pin. 
+* Once a user is successfully authenticated he should be able to perform a transaction which can be either deposit, withdrawal, or just view the balance. 
+* At the end of each transaction, appropriate messages should be displayed like if the transaction was successful or failed. 
 
-##### Keywords
-  - Classes and Instances (General OOP)
-  - Inheritance (General OOP)
-  - Composition (General OOP)
-  - Encapsulation (General OOP)
-  - Polymorphism (General OOP)
-  - magic methods (Python)
-    (e.g. \__init__(self) -- Python's way of defining constructors)
-  - The _super_ and _self_ keywords
+2. Class Design:
+ Here is the list of the basic classes, interfaces, and methods one should implement - 
+* ATM: This class should contain the main logic like entering the pin, selecting the transaction, deposit, withdraw, balance display, the error message displayed, exit message displayed, etc.
+* User: A user must have an account and a card 
+* Account: An account has a balance that should be updated when a transaction occurs 
+* Card: A card should get authenticated based on PIN entered 3. Sample input and outputs:
 
-##### Recommended Reading
-  - "Learning Python" _(5th edition)_ by Mark Lutz: Part VI "Classes and OOP"
-  - "Learn Python the Hard Way" _(3rd edition)_ by Zed Shaw: Exercises 41-45
+3. Note :
+* You must use object-oriented principles, accept and provide values only through the CLI.
+* Use python’s logger to log the major events during each transaction.
+* Bonus: Try to create unit tests that handle every edge and the regular case of use of the app.
+* No property/method should be hardcoded to pass the tests.
 
-### Task
-Using as many concepts provided in the keywords as you can (without having to go too far out of your way) implement either a game, tool, system, or etc. This task is recommended to be a simple CLI-based application/program as it's only to practice OOP, but you're free to make a full blown application if you _really_ want to. Though it would make better sense to extend this application with a GUI and a database once you learn Django.
-
-##### Criteria for Evalution
-Just to be clear, we won't actually be grading you, that would be repulsive. These are just some things that we'll be keeping in mind when we look at your submission.
-With that in mind, here are the criteria:
-  - Creativity and Ability to recognize real-life use cases of programming (via. python) and more specifically OOP.
-  - The degree to which OOP is used.
-  - Cleanliness of code and use of comments (over-use and under-use are both frowned upon).
-  - Quality of application of OOP (for the right reasons in the right way).
-  - Pythonic code.
-
-##### Time Alloted
-  - Assigned on: September 1st, 2018
-  - Due by: September 10th, 2018 (worst case by the 11th)
-
-##### Submission Rules
-  - See CONTRIBUTING.md
-
-__Good Luck and Have Fun__
+4. Resources:
+You may refer to the following:
+* https://docs.python.org/3/library/unittest.html
+* https://docs.python.org/3/howto/logging.html
+* https://www.geeksforgeeks.org/python-oops-concepts/
+* https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
